@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Colorise B.W Image | About Project</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="../layout/styles/layout.css" type="text/css" />
+<link rel="shortcut icon" href="../images/demo/activebglogo.png" type="image/x-icon">
+</head>
+<body id="top">
+<div class="wrapper col1">
+  <div id="header">
+    <div class="fl_left">
+      <h1><a href="../index.html">Colorize B.W Images</a></h1>
+      <p>This will Colorize all your Black and white image to a coloured image</p>
+    </div>
+    <div class="fl_right"><a href="#"><img src="../images/carousel/468_60.jpg" alt="" /></a></div>
+    <br class="clear" />
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col2">
+  <div id="topbar">
+    <div id="topnav">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li class="active"><a href="about-project.html">About Project</a></li>
+       
+    </div>
+    <div id="search">
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Site Search</legend>
+          <input type="text" value="Search Our Website&hellip;"  onfocus="this.value=(this.value=='Search Our Website&hellip;')? '' : this.value ;" />
+          <input type="submit" name="go" id="go" value="Search" />
+        </fieldset>
+      </form>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col3">
+  <div id="breadcrumb">
+    <ul>
+      <li class="first">You Are Here</li>
+      <li>&#187;</li>
+      <li><a href="#">Home</a></li>
+      <li>&#187;</li>
+      <li><a href="#">About Project</a></li>
+      <li>&#187;</li>
+      <li><a href="#">More</a></li>
+      <li>&#187;</li>
+      <li class="current"><a href="#">How It Works ?</a></li>
+    </ul>
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col4">
+  <div id="container">
+    <div id="content">
+      <h1> * Let's understand how image colorizer works</h1>
+      <img class="imgr" src="../images/demo/125by125_1.jpg" alt="" width="125" height="125" />
+      <p align="justify">Image colorization harnesses the power of deep neural networks (DNNs) to imbue grayscale images with vibrant color. This process begins with the acquisition of a pre-trained model compatible with OpenCV's DNN module, often obtained from frameworks like TensorFlow or Caffe. Upon loading the model, grayscale images are preprocessed by resizing, normalization, and formatting to match the model's input requirements. Through OpenCV's DNN module, the grayscale image undergoes inference within the neural network. This step involves creating an input blob, passing it through the network using 'net.forward()', and obtaining the colorized predictions as output. The post-processing phase may involve adjusting the output format to retrieve the final colorized image. This amalgamation of loading the pre-trained model, preprocessing the grayscale image, performing inference, and post-processing the output embodies the essence of leveraging deep learning via OpenCV's DNN module for image colorization tasks.</p>
+
+      <img class="imgl" src="../images/demo/125by125_2.jpg" alt="" width="125" height="125" />
+
+      <p align="justify">In the domain of image processing, grayscale depictions serve as a canvas awaiting chromatic revival. Through the utilization of deep neural networks, this metamorphosis unfolds—a process known as image colorization. Neural networks, modeled after the human brain's intricate networks, decode grayscale representations, imbuing them with nuanced and vibrant color spectrums. Leveraging convolutional architectures, these networks traverse layers, deciphering contextual relationships within the image matrix. Through the amalgamation of learned features and statistical inference, grayscale pixels transform, culminating in a reimagined visual narrative. This scientific orchestration orchestrates a symphony of transformation, elucidating the latent chromatic dimensions within grayscale imagery.</p>
+      
+
+
+      <p>
+        Certainly! Here are the key concepts utilized in image colorization using deep learning: <br><br>
+
+1. Deep Neural Networks (DNNs): Complex neural architectures inspired by the human brain, capable of &nbsp;&nbsp;&nbsp;&nbsp;learning intricate patterns within data.<br><br>
+
+2. Pre-trained Models: Existing neural network models, often trained on vast datasets, leveraged for &nbsp;&nbsp;&nbsp;&nbsp;specific tasks without retraining from scratch.<br><br>
+
+3. Grayscale Images: Images represented in shades of gray, lacking color information, serving as input &nbsp;&nbsp;&nbsp;&nbsp;for colorization.<br><br>
+
+4. Preprocessing: Operations such as resizing, normalization, and formatting applied to prepare images &nbsp;&nbsp;&nbsp;&nbsp;for compatibility with the model's input requirements.<br><br>
+
+5. Inference: The phase where input images are fed through the neural network to generate predictions &nbsp;&nbsp;&nbsp;&nbsp;or outputs, in this case, colorized versions of grayscale images.<br><br>
+
+6. Convolutional Neural Networks (CNNs): A specific type of deep neural network well-suited for &nbsp;&nbsp;&nbsp;&nbsp;image-related tasks, employing convolutional layers to extract spatial hierarchies and features.<br><br>
+
+7. Post-processing: Operations performed on the output to refine or adjust the colorized image, ensuring &nbsp;&nbsp;&nbsp;&nbsp;the final result aligns with desired expectations.<br><br>
+
+8. OpenCV's DNN Module: A framework enabling the utilization of deep neural networks within OpenCV, &nbsp;&nbsp;&nbsp;&nbsp;facilitating efficient deployment and execution of these models for image-related tasks.<br><br>
+      </p>
+      <h2>Logic Table</h2>
+      <table summary="Summary Here" cellpadding="0" cellspacing="0">
+        <thead>
+          <tr>
+            <th>Color Space Component</th>
+            <th>Descripton</th>
+           
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="light">
+            <td>L (Lightness)</td>
+            <td>Represents the brightness of the color, ranging from 0 (black) to 100 (white).</td>
+        
+          </tr>
+          <tr class="dark">
+            <td>a</td>
+            <td>Represents the green–red color component, ranging from -128 (green) to +127 (red).</td>
+         
+          </tr>
+          <tr class="light">
+            <td>b</td>
+            <td>Represents the green–red color component, ranging from -128 (green) to +127 (red).</td>
+          
+          </tr>
+          <tr class="dark">
+            <td>Image Preprocessing</td>
+            <td>Operations to prepare images for compatibility with model input requirements.<br><br>
+              Usage: <br>LAB values are used in preprocessing grayscale images before neural network inference.
+            </td>
+      
+          </tr>
+
+        </tr>
+        <tr class="light">
+          <td>Post-processing</td>
+          <td>Operations performed on model output to refine colorized images.<br><br>
+          Usage: <br>Post-processing adjusts color information in LAB space to generate the final colorized output.</td>
+    
+        </tr>
+
+      </tr>
+      <tr class="dark">
+        <td></td>
+        <td></td>
+  
+      </tr>
+        </tbody>
+      </table>
+
+      
+      <div id="comments">
+        <h2>Questions ? </h2>
+        <ul class="commentlist">
+          <li class="comment_odd">
+            <div class="author"><img class="avatar" src="../images/demo/question_1.jpg" width="32" height="32" alt="" /><span class="name"><a href="#">1.</a></span> <span class="wrote">What does the image colorizer website do?:</span></div>
+            <div class="submitdate"><a href="#">December 25, 2023 at 12:00 pm</a></div>
+            <p>Answer: The image colorizer website transforms black and white or grayscale images into colored versions using advanced algorithms and deep learning techniques.</p>
+          </li>
+
+          <li class="comment_even">
+            <div class="author"><img class="avatar" src="../images/demo/question_2.jpg" width="32" height="32" alt="" /><span class="name"><a href="#">2.</a></span> <span class="wrote">What types of images can be colorized?</span></div>
+            <div class="submitdate"><a href="#">December 25, 2023 at 12:00 pm</a></div>
+            <p>Answer: The website can colorize various types of images, including historical photographs, portraits, landscapes, artwork, and more, provided they are in grayscale or black and white format.</p>
+          </li>
+
+          <li class="comment_odd">
+            <div class="author"><img class="avatar" src="../images/demo/question_3.jpg" width="32" height="32" alt="" /><span class="name"><a href="#">3.</a></span> <span class="wrote">Does the website require any special software or subscription?</span></div>
+            <div class="submitdate"><a href="#">August 4, 2009 at 8:35 am</a></div>
+            <p>Answer: Most image colorizer websites are accessible directly via web browsers and do not require any specific software installations. Some may offer premium features through subscriptions.</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="buttons">
+        <a href="https://docs.google.com/presentation/d/1CZtDxKjlmXrHHEVsImv1L7sP9nYmed3s/edit?usp=drivesdk&ouid=100502137404627187758&rtpof=true&sd=true" target="_blank" class="download-btn ppt">Download PPT</a>
+        <a href="https://docs.google.com/document/d/1EODP-XECp9mpEM11yPeFXfreY3PSxkec/edit?usp=drivesdk&ouid=100502137404627187758&rtpof=true&sd=true" target="_blank" class="download-btn paper">Download Paper</a>
+      </div>
+      
+
+
+<hr>
+<br>
+
+      <h2>Write A Comment</h2>
+      <div id="respond">
+        <form action="https://formsubmit.co/sharmarohit24580@gmail.com" method="post">
+          <p>
+            <input type="text" name="name" id="name" value="" size="22" />
+            <label for="name"><small>Name (required)</small></label>
+          </p>
+          <p>
+            <input type="text" name="email" id="email" value="" size="22" />
+            <label for="email"><small>Mail (required)</small></label>
+          </p>
+          <p>
+            <textarea name="comment" id="comment" cols="100%" rows="10"></textarea>
+            <label for="comment" style="display:none;"><small>Comment (required)</small></label>
+          </p>
+          <p>
+            <input name="submit" type="submit" id="submit" value="Submit Form" />
+            &nbsp;
+            <input name="reset" type="reset" id="reset" tabindex="5" value="Reset Form" />
+          </p>
+        </form>
+      </div>
+    </div>
+    <div id="column">
+      <div class="subnav">
+        <h2>Models Used here: </h2>
+        <ul>
+          <li><a href="#">Deep Learning</a></li>
+          <li><a href="#">Python Programming Language</a>
+            <ul>
+              <li><a href="#">Library: Numpy</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Deep Learning Concepts</a>
+            <ul>
+              <li><a href="#">Caffe (Convolutional Architecture for Fast Feature Embedding) -Framework</a></li>
+              <li><a href="#">Neural Networks</a>
+              <ul>
+              <li><a href="#">openCV</a></li>
+              <li><a href="#">Computer Vision</a></li>
+              </ul>
+              </li>
+            </ul>
+          </li>
+         
+        </ul>
+      </div>
+      <div class="holder">
+        <h2 class="title"><img src="../images/demo/car_1.jpg" alt="" />Image COLORISER</h2>
+        <p align="justify">Welcome, users! This website brings a swift and mesmerizing solution to your images. Within seconds, witness the miraculous transformation as black and white images burst into vibrant color palettes. Our platform harnesses cutting-edge technology, employing sophisticated algorithms and deep learning techniques to breathe life into grayscale visuals. Effortlessly upload your cherished photographs, historical snapshots, or artistic compositions, and behold the enchantment as they undergo a seamless colorization process. Experience the magic of our user-friendly interface.</p>
+        <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+      </div>
+      <div id="featured">
+        <ul>
+          <li>
+            <h2>Grayscale to <span style="color: red">R</span><span style="color: green">G</span><span style="color: blue">B</span></h2>
+
+            <p class="imgholder"><img src="../images/demo/240by90img.jpg" alt="" /></p>
+            <p>In the realm of image colorization through deep learning, the RGB color space plays a pivotal role. When converting grayscale images to RGB, the model learns to predict Red, Green, and Blue (RGB) color values for each pixel. This predictive process involves channel-wise inference, where the model estimates the appropriate R, G, and B values based on surrounding context and learned patterns. Throughout training, the model refines its predictions using loss functions, minimizing the disparity between predicted and actual RGB values. Crucially, beyond mere accuracy, these models aim for perceptual quality, striving to generate colorized images that not only reflect accurate hues but also resonate visually as natural and harmonious to human observers. Achieving this harmony involves balancing color channels and ensuring coherent colorization across neighboring pixels, creating a compelling transformation from grayscale to vibrant RGB representations.</p>
+            <p class="readmore"><a href="https://en.wikipedia.org/wiki/RGB_color_model#:~:text=The%20RGB%20color%20model%20(UK,red%2C%20green%2C%20and%20blue." target="_blank">Continue Reading &raquo;</a></p>
+          </li>
+        </ul>
+      </div>
+      <div class="holder">
+        <h2>Thank You</h2>
+      </div>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col6">
+  <div id="copyright">
+    <p class="fl_left">The Current Webpage is designed for personal purpose not for commercial use <a href="#">- Rohit Sharma</a></p>
+    <p class="fl_right">Ajay Binay Institute of Technology</a></p>
+    <br class="clear" />
+  </div>
+</div>
+</body>
+</html>

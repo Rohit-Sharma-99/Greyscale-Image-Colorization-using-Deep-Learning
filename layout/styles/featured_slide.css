@@ -1,0 +1,5 @@
+@charset "utf-8";
+
+
+#waterwheelCarousel{display:block; width:960px; height:250px; margin:0 auto; padding:25px 0 0 0; background-color:#151515;}
+#waterwheelCarousel > img{display:none; cursor:pointer;}
